@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/fondopadel"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login.reserva.ElegirHoraActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/imageViewtexto"
+            android:layout_width="150dp"
+            android:layout_height="130dp"
+            android:layout_marginLeft="20dp"
+
+            app:srcCompat="@drawable/letraslogo" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="85dp"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/pelota200" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/textViewHora"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:text=""
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/textViewDia"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:text=""
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_margin="15dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="32dp"
+        android:background="@color/amarillo"
+        android:padding="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayoutB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageView
+            android:id="@+id/item_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/pelota300" />
+
+        <TextView
+            android:id="@+id/item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/item_image"
+            android:layout_toRightOf="@+id/item_image"
+            android:text="Hora:"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/item_detal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_title"
+            android:layout_toEndOf="@+id/item_image"
+            android:layout_toRightOf="@+id/item_image"
+            android:text="10:00-11:30"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/confirmaHora"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="190dp"
+            android:layout_marginTop="10dp"
+            android:text="Selecciona"
+            android:textColor="@color/black"
+            android:textStyle="bold"></Button>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutB"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_margin="15dp"
+        android:background="@color/amarillo"
+        android:padding="16dp"
+        tools:layout_editor_absoluteX="15dp"
+        tools:layout_editor_absoluteY="371dp">
+
+        <ImageView
+            android:id="@+id/item_imageB"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/pelota300" />
+
+        <TextView
+            android:id="@+id/item_titleB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/item_imageB"
+            android:layout_toRightOf="@+id/item_imageB"
+            android:text="Hora:"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/item_detalB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_titleB"
+            android:layout_toEndOf="@+id/item_imageB"
+            android:layout_toRightOf="@+id/item_imageB"
+            android:text="11:30-13:00"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/confirmaHoraB"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="190dp"
+            android:layout_marginTop="10dp"
+            android:text="Selecciona"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutC"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_margin="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/amarillo"
+        android:padding="16dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayoutB">
+
+        <ImageView
+            android:id="@+id/item_imageC"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/pelota300" />
+
+        <TextView
+            android:id="@+id/item_titleC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/item_imageC"
+            android:layout_toRightOf="@+id/item_imageC"
+            android:text="Hora:"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_titleC"
+            android:layout_toEndOf="@+id/item_imageC"
+            android:layout_toRightOf="@+id/item_imageC"
+            android:text="13:00-14:30"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/confirmaHoraC"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="190dp"
+            android:layout_marginTop="10dp"
+            android:text="Selecciona"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutD"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_margin="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/amarillo"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayoutC"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/item_imageD"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/pelota300" />
+
+        <TextView
+            android:id="@+id/item_titleD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/item_imageD"
+            android:layout_toRightOf="@+id/item_imageD"
+            android:text="Hora:"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_titleD"
+            android:layout_toEndOf="@+id/item_imageD"
+            android:layout_toRightOf="@+id/item_imageD"
+            android:text="16:00-17:30"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/confirmaHoraD"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="190dp"
+            android:layout_marginTop="10dp"
+            android:text="Selecciona"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </RelativeLayout>
+
+</LinearLayout>

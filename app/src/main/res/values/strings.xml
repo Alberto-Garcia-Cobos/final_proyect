@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">MainActivity</string>
+    <string name="reserva_pista">RESERVA PISTA</string>
+    <string name="gestiona_tus_reservas">GESTIONA TUS RESERVAS</string>
+    <string name="title_activity_reserva_horas">ReservaHoras</string>
+    <string name="selecciona_la_hora">Selecciona la hora</string>
+    <string name="selecciona_fecha">Selecciona Fecha</string>
+    <string name="nombre">Nombre</string>
+
+    <string-array name="selecciona_hora">
+        <item>10:00 - 11:30</item>
+        <item>11:30 - 13:00</item>
+        <item>13:00 - 14:30</item>
+        <item>16:00 - 17:30</item>
+        <item>17:30 - 19:00</item>
+        <item>19:00 - 20:30</item>
+        <item>20:30 - 22:00</item>
+    </string-array>
+</resources>
